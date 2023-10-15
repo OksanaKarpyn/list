@@ -34,6 +34,7 @@ function saveToLocalStorage() {
 
 function createMakeListItem(inputValue) {
     let ul = document.createElement('ul');
+    ul.classList.add('bg-light');
     makeList.appendChild(ul);
     let li = document.createElement('li');
     li.classList.add('li-make');
@@ -71,8 +72,6 @@ function createMakeListItem(inputValue) {
     // Pulisci l'input dopo l'aggiunta dell'elemento
     i1.value = '';
     saveToLocalStorage();
-    // saveToLocalStorage(inputValue);
-    //removeFromLocalStorage(inputValue);
   
 }
 
@@ -115,8 +114,6 @@ btnForm.addEventListener('click', f1);
  
 
 
-// Carica i dati dalla localStorage all'avvio dell'app
-//loadFromLocalStorage();
 //localStorage.clear();
 
 
